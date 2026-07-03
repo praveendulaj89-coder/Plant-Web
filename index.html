@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>I ❤️ Plants🌱</title>
+
+    <style>
+ @keyframes floatingCard {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fact-card {
+    animation: floatingCard 4s ease-in-out infinite;
+    transition: 0.3s;
+}
+
+.fact-card:hover {
+    transform: scale(1.03);
+}
+        .floating-plants{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.floating-plants span{
+    position:absolute;
+    display:block;
+    font-size:30px;
+    opacity:0.8;
+    animation:floatPlant linear infinite;
+}
+
+.floating-plants span:nth-child(1){
+    left:5%;
+    animation-duration:12s;
+    animation-delay:0s;
+}
+
+.floating-plants span:nth-child(2){
+    left:15%;
+    animation-duration:18s;
+    animation-delay:2s;
+}
+
+.floating-plants span:nth-child(3){
+    left:30%;
+    animation-duration:15s;
+    animation-delay:4s;
+}
+
+.floating-plants span:nth-child(4){
+    left:45%;
+    animation-duration:20s;
+    animation-delay:1s;
+}
+
+.floating-plants span:nth-child(5){
+    left:60%;
+    animation-duration:13s;
+    animation-delay:5s;
+}
+
+.floating-plants span:nth-child(6){
+    left:75%;
+    animation-duration:16s;
+    animation-delay:3s;
+}
+
+.floating-plants span:nth-child(7){
+    left:90%;
+    animation-duration:18s;
+    animation-delay:6s;
+}
+
+@keyframes floatPlant{
+    0%{
+        transform:translateY(110vh) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:0.8;
+    }
+
+    50%{
+        transform:translateY(40vh) translateX(25px) rotate(180deg);
+    }
+
+    100%{
+        transform:translateY(-120px) translateX(-25px) rotate(360deg);
+        opacity:0;
+    }
+}
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+                url("images/plants 1.png");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="floating-plants">
+    <span>🌿</span>
+    <span>🍃</span>
+    <span>🌱</span>
+    <span>🍀</span>
+    <span>🌿</span>
+    <span>🌱</span>
+    <span>🍃</span>
+</div>
+
+<!-- HEADER -->
+<div style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+padding:15px;
+background: linear-gradient(90deg, #1B5E20, #2E7D32);
+color:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+border: 2px solid#E8F5E9 ;
+border-radius:10px;
+">
+
+  <img src="images/plants 2.png" width="80" height="80">
+
+  <div>
+    <h1 style="margin:0;">PLANTS🌱</h1>
+    <p style="margin:5px 0 0 0;">We are plant babyss💚</p>
+  </div>
+
+</div>
+
+<br>
+
+<!-- INTRO BOX -->
+<div style="
+border: 2px solid #10661E;
+border-radius: 12px;
+padding: 15px;
+background-color: #E8F5E9;
+border-left: 6px solid #2E7D32;
+">
+
+<p style="margin:0;">
+<b>
+Plants are the foundation of life on Earth. They produce oxygen, provide food, medicine, shelter, and maintain ecosystem balance. From towering trees to delicate flowers, plants enrich our planet with beauty and life.
+</b>
+</p>
+
+</div>
+
+<br>
+
+<!-- VIDEOS -->
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+
+  <video autoplay muted loop style="width:100%; max-width:500px; border-radius:12px;">
+    <source src="videos/plants 1.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop style="width:100%; max-width:500px; border-radius:12px;">
+    <source src="videos/plants 2.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+<br>
+
+<!-- BUTTONS -->
+<div style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:20px;">
+
+<a href="Flowering Plants.html">
+    <button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+        🌸 Flowering Plants
+    </button>
+</a>
+
+<a href="Medicinal Plants.html">
+    <button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+        🌿 Medicinal Plants
+    </button>
+</a>
+
+<a href="Fruit Plants.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🍎 Fruit Plants
+</button></a>
+
+<a href="vegetable Plants.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🥕 Vegetable Plants
+</button></a>
+
+<a href="Trees.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🌳 Trees
+</button></a>
+
+<a href="Herbs.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🌿 Herbs
+</button></a>
+
+<a href="Climbers.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🍇 Climbers
+</button></a>
+
+<a href="Creepers.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🍉 Creepers
+</button></a>
+
+<a href="Indoor Plants.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🏠 Indoor Plants
+</button></a>
+
+<a href="Outdoor Plants.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🌼 Outdoor Plants
+</button></a>
+
+<a href="Succulents & Cacti.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    🌵 Succulents & Cacti
+</button></a>
+
+<a href="silly string.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    silly string🖌️
+</button></a>
+
+<a href="game.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    If you wanna play Stack game Click here🎮
+</button></a>
+
+<a href="3D Neural Network.html">
+<button style="background:#2E7D32; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+3D Neural Network
+</button></a>
+
+<a href="love.html">
+<button style="background:#B30B1E; color:white; border:none; border-radius:25px; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; transition:transform .25s ease;">
+    If u r My Mouseya CLICK This!😉
+</button>
+</a>
+
+</div>
+
+<script>
+const buttons = document.querySelectorAll("button");
+
+document.addEventListener("mousemove", (e) => {
+    buttons.forEach((button) => {
+        const rect = button.getBoundingClientRect();
+
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const dx = e.clientX - centerX;
+        const dy = e.clientY - centerY;
+
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < 120) {
+            button.style.transform = `translate(${dx * 0.15}px, ${dy * 0.15}px) scale(1.08)`;
+        } else {
+            button.style.transform = "translate(0px, 0px) scale(1)";
+        }
+    });
+});
+</script>
+
+</div>
+
+<br>
+
+<!-- FUN FACT -->
+<div class="fact-card" style="
+margin-top:20px;
+padding:15px;
+border-radius:10px;
+border:2px solid #2E7D32;
+
+background-image:url('images/plants back.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-color:rgba(0,0,0,0.4);
+background-blend-mode:darken;
+
+color:white;
+">
+    
+<h3>Did you know? 💡</h3>
+
+<h4>🌱 Plants can “talk” (just not with words)</h4>
+
+<p style="margin:0;">
+Plants don’t have voices, but they do communicate using chemical signals.
+When a plant is attacked by insects, it can release chemicals into the air to warn nearby plants. Those nearby plants may then start producing natural defenses before they’re even attacked.
+</p>
+
+</div>
+<br>
+<footer style="
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+">
+    <p>©This web is for my Mouseya😘| Built with ❤️</p>
+</footer>
+
+</body>
+</html>

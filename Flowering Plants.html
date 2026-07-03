@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head><title>I ❤️ Plants🌱</title></head>
+<head>
+	<style>
+figure{
+    opacity:0;
+    animation:fadeIn 1s forwards;
+}
+
+figure:nth-child(1){animation-delay:0.2s;}
+figure:nth-child(2){animation-delay:0.5s;}
+figure:nth-child(3){animation-delay:0.8s;}
+figure:nth-child(4){animation-delay:1.1s;}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+        @keyframes floatingCard {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fact-card {
+    animation: floatingCard 4s ease-in-out infinite;
+    transition: 0.3s;
+}
+
+.fact-card:hover {
+    transform: scale(1.03);
+}
+        .floating-plants{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.floating-plants span{
+    position:absolute;
+    display:block;
+    font-size:30px;
+    opacity:0.8;
+    animation:floatPlant linear infinite;
+}
+
+.floating-plants span:nth-child(1){
+    left:5%;
+    animation-duration:12s;
+    animation-delay:0s;
+}
+
+.floating-plants span:nth-child(2){
+    left:15%;
+    animation-duration:18s;
+    animation-delay:2s;
+}
+
+.floating-plants span:nth-child(3){
+    left:30%;
+    animation-duration:15s;
+    animation-delay:4s;
+}
+
+.floating-plants span:nth-child(4){
+    left:45%;
+    animation-duration:20s;
+    animation-delay:1s;
+}
+
+.floating-plants span:nth-child(5){
+    left:60%;
+    animation-duration:13s;
+    animation-delay:5s;
+}
+
+.floating-plants span:nth-child(6){
+    left:75%;
+    animation-duration:16s;
+    animation-delay:3s;
+}
+
+.floating-plants span:nth-child(7){
+    left:90%;
+    animation-duration:18s;
+    animation-delay:6s;
+}
+
+@keyframes floatPlant{
+    0%{
+        transform:translateY(110vh) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:0.8;
+    }
+
+    50%{
+        transform:translateY(40vh) translateX(25px) rotate(180deg);
+    }
+
+    100%{
+        transform:translateY(-120px) translateX(-25px) rotate(360deg);
+        opacity:0;
+    }
+}</style>
+	<div style="text-align: center;background: linear-gradient(90deg, #1B5E20, #2E7D32); color: white;padding: 20;gap: 10;box-shadow:0 4px 10px rgba(0,0,0,0.2);border: 2px solid#E8F5E9 ;
+border-radius:10px;">
+<h1>🌸 Flowering Plants</h1>
+</div>
+</head>
+
+<body style="background: linear-gradient(90deg, #B5FFBB, #2E7D32);">
+	</body>
+<br>
+	<body>
+    <div style="text-align: center;">
+
+        <figure style="display: inline-block; margin: 10px;">
+            <img src="images\flower 1.jpeg"
+                 style="border:2px white outset;"
+                 height="200" width="200">
+            <figcaption>Mexican Petunia</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px;">
+            <img src="images\flower 2.jpeg"
+                 style="border:2px white outset;"
+                 height="200" width="180">
+            <figcaption>Blue Butterfly Pea (Nil Katurolu)</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px;">
+            <img src="images\flower 3.jpeg"
+                 style="border:2px white outset;"
+                 height="200" width="150">
+            <figcaption>Sunflower</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px;">
+            <img src="images\flower 4.jpeg"
+                 style="border:2px white outset;"
+                 height="200" width="200">
+            <figcaption>Rose</figcaption>
+        </figure>
+
+        <br><br>
+
+        <video width="200" autoplay muted loop
+               style="border:5px white inset;">
+            <source src="videos/plants 3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+<div style="text-align: center;" >
+<p><b><h2>"Flowering plants are plants that produce flowers and form seeds enclosed within a fruit. They belong to a group called angiosperms, which are the largest and most diverse group of plants on Earth." </h2><b></p><br>
+</div>
+
+<h2>Characteristics of Flowering Plants</h2>
+<ul>
+	<h3><li>Produce flowers for reproduction.</li>
+	<li>Seeds develop inside an ovary, which later becomes a fruit.</li>
+	<li>Have specialized tissues (xylem and phloem) for transporting water and nutrients.</li>
+	<li>Can be found in almost every habitat, from deserts to rainforests.</li></h3>
+</ul>
+<br>
+<h2>Types of Flowering Plants</h2>
+
+<ol>
+<h3><li>Monocots – have one seed leaf (e.g., grasses, lilies, orchids).</li>
+<li>Dicots (Eudicots) – have two seed leaves (e.g., roses, beans, sunflowers).</li></h3>
+</ol>
+
+<br>
+
+<div class="fact-card" style="
+margin-top:20px;
+padding:15px;
+border-radius:10px;
+border:2px solid #2E7D32;
+
+background-image: url('images/flowers back.jpeg');background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-color:rgba(0,0,0,0.4);
+background-blend-mode:darken;
+
+color:white;
+">
+    
+<h2>Did you know? 💡</h2>
+
+
+<h3>🌻 1. Sunflowers follow the Sun</h3>
+<p style="margin:0;">Young sunflowers turn their faces to follow the Sun across the sky, a behavior called heliotropism. Mature flowers usually end up facing east.</p>
+
+<h3>🌺 2. Some flowers smell like rotten meat</h3>
+<p style="margin:0;">The giant Corpse flower produces a powerful odor similar to decaying flesh to attract flies and beetles for pollination.</p>
+
+<h3>🌷 3. Tulips were once worth a fortune</h3>
+<p style="margin:0;">In the 1600s, rare tulip bulbs became so valuable in the Netherlands that a single bulb could cost as much as a house during "Tulip Mania."</p>
+
+<h3>🌸 4. Orchids are incredibly diverse</h3>
+<p style="margin:0;">There are over 25,000 species of orchids, making them one of the largest families of flowering plants.</p>
+
+<h3>🌼 5. Flowers have secret UV patterns</h3>
+<p style="margin:0;">Many flowers have ultraviolet markings that humans can't see, but bees can. These patterns act like landing guides to help pollinators find nectar.</p>
+</p>
+
+</div>
+
+<footer style="
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+">
+
+    <a href="index.html" style="
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    ">
+        🏠 Home
+    </a>
+
+    <p>© This web is for my Mouseya 😘 | Built with ❤️</p>
+
+</footer>
+</body>
+
+</html>
